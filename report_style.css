@@ -1,0 +1,88 @@
+@font-face{
+font-family:font;
+src:url(xinxen_font.ttf);
+}
+body {
+  display:flex;
+  justify-content:center;
+  background:#f4f7fe;
+  font-size:25pt;
+  color:#757575;
+  font-family:font;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition:1s;
+}
+.card{
+  position: absolute;
+  z-index:999;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%,50%);
+  padding:12px;
+  border-radius:5px;
+  border:1px solid #e0e0e0;
+  width:280px;
+  height:auto;
+  transition:1s;
+  background:rgba(255, 255, 255, 0.3);
+  backdrop-filter:blur(8px);
+  transform-style:preserve-3d;
+}
+.dec1{
+position:absolute;
+right: 50%;
+bottom: 50%;
+transform: translate(90%,-70%);
+width:100px;
+height:100px;
+background:#673ab7;
+}
+input{
+width:265px;
+background:transparent;
+border:1px solid #e0e0e0;
+border-radius:5px;
+padding:5px;
+font-family:font;
+margin-bottom:0px;
+}
+h4{
+margin-top:5px;
+margin-bottom:5px;
+}
+button{
+width:277px;
+padding:5px;
+background:transparent;
+border-radius:5px;
+border:1px solid #673ab7;
+font-family:font;
+color:#673ab7;
+margin-top:0px;
+transition:1s;
+}
+button:hover{
+border:1px solid #673ab7;
+box-shadow:0 5px 15px #673ab7;
+color:#fff;
+background:#673ab7;
+}
+h6{
+margin-top:4px;
+margin-bottom:-2px;
+font-size:11pt;
+}
+.title{
+display:flex;
+}
+.material-icons{
+position:fixed;
+top:0;
+right:0;
+font-size:12pt;
+color:#f44336;
+padding:10px;
+}

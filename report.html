@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff" />
+<!-- Global site tag (gtag.js) - Google Ads: 10871180686 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10871180686"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10871180686');
+</script>
+
+  <title>Rate App</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="report_style.css">
+</head>
+<body>
+<div class="card">
+<div class="title">
+<h4>Rate App</h4>
+<span class="material-icons" onclick="back()">close</span>
+</div>
+<form action="javascript:mail()">
+<input class="edittxt1" type="text" placeholder="Title" value="Xinxen Editor Report" disabled>
+<input class="edittxt2" type="text" placeholder="Message" required>
+<h6>This will send your review directly to developer as a email.</h6>
+<button>POST</button>
+</form>
+</div>
+<span class="dec1"></span>
+  <!-- Project -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_QO409gnQxAFOeP2BdHKPs");
+    })();
+  </script>
+  <script src="report_script.js"></script>
+</body>
+</html>
